@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Libro</title>
-    <link rel="stylesheet" href="Menu.css">
+    <title>Libro</title>
+    <link rel="stylesheet" href="MenuLibroP.css">
 </head>
 <body>
     <div class="book-container">
         <img src="../imagen/Libro2.png" alt="Heartstopper" class="book-image">
-        <h2>Heartstopper</h2>
-        <h3>Alice Oseman</h3>
-        <p><strong>Categoría:</strong> Cómic</p>
-        <p><strong>ISBN:</strong> 9877477181</p>
-        <h4>Sinopsis:</h4>
-        <p>Charly y Nick van al mismo colegio. Muy pronto se vuelven amigos y más pronto aún Charlie comienza a sentir cosas por Nick... aunque sabe que es un imposible. Pero el amor obra de formas inesperadas, y Nick está más interesado en Charlie de lo que ninguno de los dos puede llegar a creer.</p>
-        <button class="loan-button">Préstamo</button>
+        <div class="info">
+            <h2>Heartstopper</h2>
+            <p>Alice Oseman</p>
+            <p><strong>Categoría:</strong> Cómic</p>
+            <p><strong>ISBN:</strong> 9877477181</p>
+            <p><strong>Sinopsis:</strong></p>
+            <p>Charly y Nick van al mismo colegio. Muy pronto se vuelven amigos y más pronto aún Charlie comienza a sentir cosas por Nick... aunque sabe que es un imposible. Pero el amor obra de formas inesperadas, y Nick está más interesado en Charlie de lo que ninguno de los dos puede llegar a creer.</p>
+        </div>
+        <div class="buttons">
+            <button class="loan-button">Préstamo</button>
+            <button class="comprar" onclick="window.location.href='ticket.html'">Comprar</button>
+        </div>
     </div>
 </body>
 </html>

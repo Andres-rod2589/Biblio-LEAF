@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -11,23 +11,57 @@
         <h1 class="title">Biblio-Leaf</h1>
         <p>Registro de Bibliotecario</p>
         <div class="form-container">
-            <form>
+            <form class="two-column-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido-paterno">Apellido Paterno:</label>
+                    <input type="text" id="apellido-paterno" name="apellido-paterno" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido-materno">Apellido Materno:</label>
+                    <input type="text" id="apellido-materno" name="apellido-materno">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group">
+                    <label for="calle">Calle:</label>
+                    <input type="text" id="calle" name="calle" required>
+                </div>
+                <div class="form-group">
+                    <label for="numero-exterior">Número Exterior:</label>
+                    <input type="text" id="numero-exterior" name="numero-exterior" required>
+                </div>
+                <div class="form-group">
+                    <label for="numero-interior">Número Interior:</label>
+                    <input type="text" id="numero-interior" name="numero-interior">
+                </div>
+                <div class="form-group">
+                    <label for="codigo-postal">Código Postal:</label>
+                    <input type="text" id="codigo-postal" name="codigo-postal" pattern="[0-9]{5}" required>
+                </div>
                 <div class="form-group">
                     <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
                 </div>
                 <div class="form-group">
                     <label for="confirm-password">Confirmar Contraseña:</label>
-                    <input type="password" id="confirm-password" name="confirm-password">
+                    <input type="password" id="confirm-password" name="confirm-password" required>
                 </div>
-                <button type="submit" class="button">Registrar</button>
+                <div class="form-group full-width">
+                    <button type="submit" class="button">Registrar</button>
+                </div>
             </form>
         </div>
-        <img src="../imagen/mascota.png" alt="Apple" class="apple-image">
+        <img src="imagen/mascota.png" alt="Mascota" class="apple-image" onclick="window.location.href='../View/login.html'" style="cursor: pointer;">
     </div>
 </body>
 </html>

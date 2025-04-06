@@ -1,20 +1,22 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f8f1e5;
+    font-family: Arial, sans-serif;
+    background-color: #222;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: white;
 }
 
 .book-container {
-    background-color: #a05a1c;
-    color: white;
-    padding: 20px;
+    background-color: #fff;
     width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
     text-align: center;
-    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .book-image {
@@ -22,30 +24,62 @@ body {
     border-radius: 10px;
 }
 
+.info {
+    background-color: #9c5b22;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
 h2 {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #5a2323; /* Previous color restored */
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
 }
 
 p {
     font-size: 14px;
+    margin: 5px 0;
+    color: white;
+}
+
+buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .loan-button {
     background-color: #ffcc00;
     color: black;
     border: none;
-    padding: 10px;
-    font-size: 16px;
+    padding: 8px 15px;
+    font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 .loan-button:hover {
     background-color: #e6b800;
+}
+
+.comprar {
+    background-color: #5a2323;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comprar:hover {
+    background-color: #7a1c1c;
 }
